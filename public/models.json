@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Real-time suggestions"
+    ],
+    "icon": "https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png"
+  },
+  {
+    "id": 2,
+    "name": "Designify Studio",
+    "description": "Creative design platform with AI tools for graphics and branding.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Drag-and-drop editor",
+      "Brand kits",
+      "AI image generator",
+      "Social media templates"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828919.png"
+  },
+  {
+    "id": 3,
+    "name": "CodeAssist AI",
+    "description": "Smart coding assistant for developers with auto-complete and debugging help.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Code auto-completion",
+      "Bug detection",
+      "Multi-language support",
+      "IDE integration"
+    ],
+    "icon": "/src/assets/products/design-tool.png"
+  },
+  {
+    "id": 4,
+    "name": "WriteGenius",
+    "description": "AI writing assistant for blogs, essays, and marketing content.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Content generation",
+      "Grammar correction",
+      "SEO optimization",
+      "Tone adjustment"
+    ],
+    "icon": "/src/assets/products/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "VideoCraft AI",
+    "description": "AI-powered video editor for creating professional videos easily.",
+    "price": 60,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Auto video editing",
+      "Text-to-video",
+      "Transitions and effects",
+      "4K export"
+    ],
+    "icon": "/src/assets/products/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "VoiceBot Pro",
+    "description": "AI voice generator with realistic speech and multilingual support.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Text-to-speech",
+      "Multiple voices",
+      "Language support",
+      "Audio export"
+    ],
+    "icon": "/src/assets/products/shopping-cart.png"
+  },
+  {
+    "id": 7,
+    "name": "TaskFlow AI",
+    "description": "AI productivity tool to manage tasks, schedules, and workflows.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Task automation",
+      "Calendar integration",
+      "Smart reminders",
+      "Team collaboration"
+    ],
+    "icon": "/src/assets/products/social-media.png"
+  },
+  {
+    "id": 8,
+    "name": "PhotoEnhance AI",
+    "description": "AI image enhancement tool for improving photo quality instantly.",
+    "price": 30,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Image upscaling",
+      "Noise reduction",
+      "Color correction",
+      "Batch processing"
+    ],
+    "icon": "/src/assets/products/writing_2327400 1.png"
+  }
+]
