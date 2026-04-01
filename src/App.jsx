@@ -5,6 +5,8 @@ import Models from './component/Models';
 import Cart from './component/Cart';
 import Stats from './component/Stats';
 import Steps from './component/Steps';
+import Pricing from './component/Pricing';
+import Footer from './component/Footer';
 
 const getModels = async () => {
   const res = await fetch("/public/models.json")
@@ -16,7 +18,7 @@ const modelPromise = getModels()
 
 function App  () {
   const [activeTab, setActiveTab] = useState ("Products");
-  const [carts, setCarts] = useState([])
+  const [carts, setcarts] = useState([])
 
   return (
     <div>
@@ -33,11 +35,16 @@ function App  () {
         <input type="radio" name="my_tabs_1" className="tab rounded-full" aria-label={`Cart (${carts.length})`} onClick={()=> setActiveTab("Cart")}/>
         </div>
 
-      {activeTab === "Products" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}/>}
+      {activeTab === "Products" && <Models modelPromise={modelPromise} carts={carts} setcarts={setcarts}/>}
 
-      {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts}/>}
+      {activeTab === "Cart" && <Cart carts={carts} setcarts={setcarts}/>}
 
       <Steps/>
+
+      <Pricing/>
+
+      <Footer/>
+
     </div>
   );
 };

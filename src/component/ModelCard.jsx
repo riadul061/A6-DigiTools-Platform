@@ -2,7 +2,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 
-const ModelCard = ({model, carts, setCarts}) => {
+const ModelCard = ({model, carts, setcarts}) => {
     const [isSubcribed, setIsSubscribed] = useState(false)
 
     const handleSubsScription = () => {
@@ -15,7 +15,7 @@ const ModelCard = ({model, carts, setCarts}) => {
             return;
         }
 
-        setCarts([...carts, model])
+        setcarts([...carts, model])
         toast.success(" Added to cart !")
     }
     return (
