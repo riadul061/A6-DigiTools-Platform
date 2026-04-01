@@ -29,12 +29,12 @@ function App  () {
       {/* name of each tab group should be unique */}
       <div className="tabs tabs-box justify-center mt-6 bg-transparent">
         <input type="radio" name="my_tabs_1" className="tab rounded-full bg-blue-700 w-[104]" aria-label="Products" onClick={()=> setActiveTab("Products")} defaultChecked/>
-        <input type="radio" name="my_tabs_1" className="tab rounded-full" aria-label="Cart" onClick={()=> setActiveTab("Cart")}/>
+        <input type="radio" name="my_tabs_1" className="tab rounded-full" aria-label={`Cart (${carts.length})`} onClick={()=> setActiveTab("Cart")}/>
         </div>
 
       {activeTab === "Products" && <Models modelPromise={modelPromise} carts={carts} setcarts={setcarts}/>}
 
-      {activeTab === "Cart" &&<Cart carts={carts} setcarts={setcarts}/>}
+      {activeTab === "Cart" && <Cart carts={carts} setcarts={setcarts}/>}
     </div>
   );
 };

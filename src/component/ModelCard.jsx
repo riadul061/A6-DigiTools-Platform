@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 
 const ModelCard = ({model, carts, setcarts}) => {
@@ -6,7 +7,16 @@ const ModelCard = ({model, carts, setcarts}) => {
 
     const handleSubsScription = () => {
         setIsSubscribed(true)
+
+        const isFound = carts.find(item => item.id === model.id)
+
+        if(isFound) {
+            toast.error("Products already in cart!")
+            return;
+        }
+
         setcarts([...carts, model])
+        toast.success(" Added to cart !")
     }
     return (
         <div className="shadow-lg rounded-lg ">         
@@ -17,6 +27,8 @@ const ModelCard = ({model, carts, setcarts}) => {
                             <h2 className="text-2xl font-bold">{model.name}</h2>
                             <p>{model.description}</p>
                             <div className='text-2xl font-bold'>${model.price}/Mo</div>
+                            <div className=" font-bold w-[95px} h-[31PX]">{model.period}</div>
+                            <div className="font-bold">{model.tagType}</div>
                             <ul className="text-sm text-gray-600 mb-5 space-y-1">
                                 {model.features.map((f, i) => (
                                     <li key={i}>✔ {f}</li>))}
