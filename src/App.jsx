@@ -3,6 +3,7 @@ import NavBar from './component/NavBar';
 import Banner from './component/Banner';
 import Models from './component/Models';
 import Cart from './component/Cart';
+import Stats from './component/Stats';
 
 const getModels = async () => {
   const res = await fetch("/public/models.json")
@@ -21,6 +22,8 @@ function App  () {
       <NavBar/>
 
       <Banner/>
+
+      <Stats/>
       
       
       {/* name of each tab group should be unique */}

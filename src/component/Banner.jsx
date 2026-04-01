@@ -24,14 +24,11 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <div className="flex flex-wrap gap-4 pt-4">
-            <button className="bg-blue-600 px-4 py-4 rounded-full font-semibold text-lg shadow-xl shadow-red-500/30 flex items-center gap-3 group text-white">
-              Explore Products
-            </button>
+            <div className="flex flex-wrap gap-4 ">
+            <button className="btn btn-primary mr-2
+            bg-purple-600 rounded-full">Explore Products</button>
           </div>
-            <button className="bg-blue-600 px-2 py-4 rounded-full font-semibold text-lg shadow-xl shadow-red-500/30 flex items-center gap-3 group text-white">
-              Watch Demo
-            </button>
+          <button className="btn btn-outline border-purple-600 text-purple-600 rounded-full"><img src="/src/assets/Play.png" alt="" />Watch Demo</button>
           </div>
           </div>
 
